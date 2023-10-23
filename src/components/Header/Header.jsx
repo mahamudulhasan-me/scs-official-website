@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { HiOutlineMail, HiPhone } from "react-icons/hi";
 import ActiveLink from "../ActiveLink/ActiveLink";
-import ButtonLogin from "../ButtonGroup/ButtonLogin";
-import ButtonTracking from "../ButtonGroup/ButtonTracking";
+import ButtonOutline from "../ButtonGroup/ButtonOutline";
+import ButtonPrimary from "../ButtonGroup/ButtonPrimary";
 
 const Header = () => {
   return (
@@ -19,7 +19,7 @@ const Header = () => {
           </p>
         </div>
       </div>
-      <nav className="bg-gray-800 text-white p-4 px-[10%]">
+      <nav className="bg-gray-800 text-white py-2 px-[10%]">
         <div className="flex justify-between items-center">
           <Link href="/">
             <Image
@@ -40,10 +40,10 @@ const Header = () => {
 
             <div className="space-x-4">
               <Link href="/">
-                <ButtonLogin />
+                <ButtonOutline />
               </Link>
               <Link href="/">
-                <ButtonTracking />
+                <ButtonPrimary />
               </Link>
             </div>
           </div>

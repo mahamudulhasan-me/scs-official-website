@@ -1,13 +1,13 @@
 "use client";
 import ReactiveButton from "reactive-button";
 
-const ButtonLogin = () => {
+const ButtonOutline = ({ idleText, size }) => {
   return (
     <ReactiveButton
       color={"primary"}
       outline={true}
-      idleText={"Login"}
-      size="normal"
+      idleText={idleText}
+      size={size}
       shadow={true}
       style={{
         borderRadius: "5px",
@@ -19,4 +19,4 @@ const ButtonLogin = () => {
   );
 };
 
-export default ButtonLogin;
+export default ButtonOutline;
