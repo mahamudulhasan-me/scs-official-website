@@ -13,10 +13,12 @@ import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import ButtonPrimary from "../ButtonGroup/ButtonPrimary";
 import ButtonSecondary from "../ButtonGroup/ButtonSecondary";
+import SectionHeadTitle from "../Shared/SectionHeadTitle";
+import ImportantFeature from "./ImportantFeature";
 
 export default function Banner() {
   return (
-    <>
+    <div className="relative mb-24">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -32,26 +34,59 @@ export default function Banner() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="w-full h-[calc(100vh-5rem)] bg-cover bg-center bg-no-repeat  bg-[url('/images/slider/slider_1.jpg')] px-[10%] flex  items-center">
-            <div>
-              <p className="flex items-center gap-2 text-primary uppercase  tracking-widest">
-                <span className="w-10 h-1 bg-primary"></span> MOVING SERVICE,
-                SINCE 1945.
-              </p>
-              <h1 className="text-8xl font-semibold my-8 text-slate-900">
-                We Make Moving <br />{" "}
-                <span className="text-primary">Cheap & Safe.</span>
-              </h1>
+          <div className="w-full h-[calc(100vh-5rem)] bg-cover bg-center bg-no-repeat  bg-[url('/images/slider/slider_4.jpg')]  bg-opacity-25 ">
+            <div
+              className="w-full h-full px-[10%] 
+              flex  items-center gradient-opacity-violet-to-red
+              "
+            >
+              <div>
+                <SectionHeadTitle
+                  title="MOVING SERVICE,
+                  SINCE 1945."
+                />
 
-              <div className=" space-x-4">
-                <ButtonSecondary idleText={"Contact Us"} size={"large"} />
-                <ButtonPrimary idleText={"Learn More"} size={"large"} />
+                <h1 className="text-8xl font-bold   text-slate-900 ">
+                  We Make Moving <br />{" "}
+                  <span className="text-primary my-4">Cheap & Safe.</span>
+                </h1>
+
+                <div className=" space-x-4 mt-10 ">
+                  <ButtonSecondary idleText={"Contact Us"} size={"large"} />
+                  <ButtonPrimary idleText={"Learn More"} size={"large"} />
+                </div>
               </div>
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-[calc(100vh-5rem)] bg-cover bg-center bg-no-repeat  bg-[url('/images/slider/slider_1.jpg')]  bg-opacity-25">
+            <div
+              className="w-full h-full px-[10%] 
+              flex  items-center gradient-opacity-red-to-violet
+              "
+            >
+              <div>
+                <p className="flex items-center gap-2 text-primary uppercase  tracking-widest">
+                  <span className="w-10 h-1 bg-primary"></span> MOVING SERVICE,
+                  SINCE 1945.
+                </p>
+
+                <h1 className="text-8xl font-semibold my-8 text-slate-900">
+                  We Make Moving <br />
+                  <span className="text-primary">Cheap & Safe.</span>
+                </h1>
+
+                <div className=" space-x-4">
+                  <ButtonSecondary idleText={"Contact Us"} size={"large"} />
+                  <ButtonPrimary idleText={"Learn More"} size={"large"} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
       </Swiper>
-    </>
+      <ImportantFeature />
+    </div>
   );
 }

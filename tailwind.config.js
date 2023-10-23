@@ -9,6 +9,10 @@ module.exports = {
     extend: {
       colors: {
         primary: "#ed502e",
+        secondary: "#6435C9",
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -2,12 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 .reactive-btn-wrapper,
 .reactive-btn {
   --reactive-button-primary-color: #ed502e !important;
   --reactive-progress-outline-primary-color: #ed502e !important;
+}
+
+.gradient-opacity-red-to-violet {
+  background: linear-gradient(
+    to left,
+    rgba(111, 57, 179, 0.5),
+    rgba(237, 80, 46, 0.2)
+  );
+}
+.gradient-opacity-violet-to-red {
+  background: linear-gradient(
+    to right,
+    rgba(111, 57, 179, 0.4),
+    rgba(237, 80, 46, 0.2)
+  );
+}
+
+@keyframes moveLeftRight {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px); /* Adjust the distance as needed */
+  }
+}
+
+.animation-container {
+  animation: moveLeftRight 3s linear infinite;
 }

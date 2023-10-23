@@ -1,9 +1,11 @@
+import AboutUs from "@/components/HomePages/AboutUs";
 import Banner from "@/components/HomePages/Banner";
 
 const HomePage = () => {
   return (
-    <div className="relative">
+    <div>
       <Banner />
+      <AboutUs />
     </div>
   );
 };
