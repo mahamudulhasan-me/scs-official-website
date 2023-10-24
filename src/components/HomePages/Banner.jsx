@@ -67,10 +67,10 @@ export default function Banner() {
               "
             >
               <div>
-                <p className="flex items-center gap-2 text-primary uppercase  tracking-widest">
-                  <span className="w-10 h-1 bg-primary"></span> MOVING SERVICE,
-                  SINCE 1945.
-                </p>
+                <SectionHeadTitle
+                  title="MOVING SERVICE,
+                  SINCE 1945."
+                />
 
                 <h1 className="text-8xl font-semibold my-8 text-slate-900">
                   We Make Moving <br />

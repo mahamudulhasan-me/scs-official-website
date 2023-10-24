@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FiCheckCircle } from "react-icons/fi";
 import ButtonSecondary from "../ButtonGroup/ButtonSecondary";
 import SectionHeadTitle from "../Shared/SectionHeadTitle";
@@ -14,6 +15,14 @@ const AboutUs = () => {
             Years of <br /> Experience
           </p>
         </div>
+
+        <Image
+          src="/images/shape/shape1.svg"
+          width={250}
+          height={250}
+          alt="dotted pattern"
+          className="absolute bottom-0 left-0"
+        />
       </div>
       <div className="col-span-5">
         <SectionHeadTitle title={"About Us"} />
