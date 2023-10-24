@@ -15,7 +15,10 @@ import ServiceSlider from "../Shared/ServiceSlider";
 
 export default function Services() {
   return (
-    <div className="px-[10%] mt-28 mb-20">
+    <div
+      className="px-[10%] mt-28 mb-20 bg-[url('/images/service/service_bg.jpg')]  w-full 
+      bg-cover bg-no-repeat"
+    >
       <div className="flex flex-col justify-center items-center">
         <SectionHeadTitle title={"Our Services"} />
         <h1 className="text-4xl">Our Main Services</h1>
@@ -42,7 +45,7 @@ export default function Services() {
           },
           1280: {
             slidesPerView: 3,
-            spaceBetween: 10,
+            spaceBetween: 20,
           },
         }}
         modules={[Pagination]}
@@ -53,27 +56,26 @@ export default function Services() {
             image="/images/service/service_1.jpg"
             title="Document Service"
           />
-          </SwiperSlide>
+        </SwiperSlide>
 
-          <SwiperSlide>
-            <ServiceSlider
-              image="/images/service/service_2.jpg"
-              title="Mobile & IT Equipment"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServiceSlider
-              image="/images/service/service_3.jpg"
-              title="Value Decleard Service"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ServiceSlider
-              image="/images/service/service_4.gif"
-              title="E-commerce"
-            />
-          </SwiperSlide>
-        
+        <SwiperSlide>
+          <ServiceSlider
+            image="/images/service/service_2.jpg"
+            title="Mobile & IT Equipment"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServiceSlider
+            image="/images/service/service_3.jpg"
+            title="Value Decleard Service"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServiceSlider
+            image="/images/service/service_4.gif"
+            title="E-commerce"
+          />
+        </SwiperSlide>
       </Swiper>
     </div>
   );
