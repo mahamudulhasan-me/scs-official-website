@@ -6,10 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// import './styles.css';
-
 // import required modules
-import { Pagination } from "swiper/modules";
+import Link from "next/link";
+import { Autoplay, Pagination } from "swiper/modules";
+import ButtonPrimary from "../ButtonGroup/ButtonPrimary";
 import SectionHeadTitle from "../Shared/SectionHeadTitle";
 import ServiceSlider from "../Shared/ServiceSlider";
 
@@ -27,6 +27,11 @@ export default function Services() {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
+        loop={true}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
@@ -48,8 +53,8 @@ export default function Services() {
             spaceBetween: 20,
           },
         }}
-        modules={[Pagination]}
-        className="mySwiper"
+        modules={[Pagination, Autoplay]}
+        // className="mySwiper"
       >
         <SwiperSlide>
           <ServiceSlider
@@ -76,7 +81,28 @@ export default function Services() {
             title="E-commerce"
           />
         </SwiperSlide>
+        <SwiperSlide>
+          <ServiceSlider
+            image="/images/service/service_1.jpg"
+            title="Non-Document Service"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServiceSlider
+            image="/images/service/service_2.jpg"
+            title="Mobile & IT Equipment"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServiceSlider
+            image="/images/service/service_3.jpg"
+            title="Value Decleard Service"
+          />
+        </SwiperSlide>
       </Swiper>
+      <Link href={""} className="flex justify-center items-center mt-4">
+        <ButtonPrimary idleText={"View More Service"} size={"large"} />
+      </Link>
     </div>
   );
 }

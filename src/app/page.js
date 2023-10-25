@@ -1,6 +1,7 @@
 import AboutUs from "@/components/HomePages/AboutUs";
 import Banner from "@/components/HomePages/Banner";
 import Services from "@/components/HomePages/Services";
+import WorkingProgress from "@/components/HomePages/WorkingProgress";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Banner />
       <AboutUs />
       <Services />
+      <WorkingProgress />
     </div>
   );
 };

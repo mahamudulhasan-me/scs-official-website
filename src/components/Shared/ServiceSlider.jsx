@@ -16,7 +16,7 @@ const ServiceSlider = ({ image, title, description }) => {
           className="rounded-t-md "
         />
       </figure>
-      <div className="bg-secondary h-[30%] pt-16 pb-2 px-5 flex justify-between items-center rounded-b-md">
+      <div className="bg-secondary h-[30%]  px-5 pt-10 flex justify-between items-center rounded-b-md">
         <Link
           href="/"
           className="font-semibold  text-white flex items-center gap-2"
@@ -29,11 +29,11 @@ const ServiceSlider = ({ image, title, description }) => {
         </Link>
         <TbTruckDelivery size={40} color="#ed502e" />
       </div>
-      <div className="absolute bg-white  bottom-[20%] top-[60%]  group-hover:top-[30%] w-4/5 px-4 pt-3 overflow-hidden transition-all duration-500 hover:duration-500 hover:transition-all">
-        <h2 className="text-xl font-semibold py-4 hover:text-primary">
+      <div className="absolute bg-white  bottom-[20%] top-[60%]  group-hover:top-[30%] w-4/5 px-4 overflow-hidden transition-all duration-500 hover:duration-500 hover:transition-all">
+        <h2 className="text-xl h-20  flex items-center font-semibold   hover:text-primary">
           {title}
         </h2>
-        <p className="text-justify mt-2 ">
+        <p className="text-justify  ">
           Quality Work is Best Organization Building Make all time
         </p>
       </div>
