@@ -16,7 +16,7 @@ import ServiceSlider from "../Shared/ServiceSlider";
 export default function Services() {
   return (
     <div
-      className="px-[10%] mt-28 mb-20 bg-[url('/images/service/service_bg.jpg')]  w-full 
+      className="px-[5%] mt-28 mb-20 bg-[url('/images/service/service_bg.jpg')]  w-full 
       bg-cover bg-no-repeat"
     >
       <div className="flex flex-col justify-center items-center">
@@ -49,7 +49,7 @@ export default function Services() {
             spaceBetween: 50,
           },
           1280: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 20,
           },
         }}

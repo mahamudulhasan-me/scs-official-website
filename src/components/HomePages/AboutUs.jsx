@@ -5,7 +5,7 @@ import SectionHeadTitle from "../Shared/SectionHeadTitle";
 
 const AboutUs = () => {
   return (
-    <div className="px-[10%] grid grid-cols-12 mt-48 mb-20 gap-24">
+    <div className="px-[5%] grid grid-cols-12 mt-48 mb-20 gap-24">
       <div className="col-span-7 relative bg-[url('/images/image5.jpg')] bg-cover bg-center w-full h-full">
         <div className="absolute animation-container bg-primary -right-12 top-8 px-4 py-3 rounded-lg text-white flex items-center gap-3">
           <h1 className="text-4xl">

@@ -5,7 +5,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 
 const ServiceSlider = ({ image, title, description }) => {
   return (
-    <div className="relative  h-[25rem] my-16 w-full group rounded-md shadow-2xl shadow-blue-500/20">
+    <div className="relative  h-72 my-16 w-full group rounded-md shadow-2xl shadow-blue-500/20">
       <figure className="h-[70%]">
         <Image
           src={image}
@@ -29,7 +29,7 @@ const ServiceSlider = ({ image, title, description }) => {
         </Link>
         <TbTruckDelivery size={40} color="#ed502e" />
       </div>
-      <div className="absolute bg-white  bottom-[20%] top-[60%]  group-hover:top-[30%] w-4/5 px-4 overflow-hidden transition-all duration-500 hover:duration-500 hover:transition-all">
+      <div className="absolute bg-white  bottom-[17%] top-[58%]  group-hover:top-[30%] w-4/5 px-4 overflow-hidden transition-all duration-500 hover:duration-500 hover:transition-all">
         <h2 className="text-xl h-20  flex items-center font-semibold   hover:text-primary">
           {title}
         </h2>

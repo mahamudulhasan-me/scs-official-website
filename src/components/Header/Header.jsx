@@ -10,7 +10,7 @@ import ButtonPrimary from "../ButtonGroup/ButtonPrimary";
 const Header = () => {
   return (
     <>
-      <div className="bg-secondary text-white px-[10%] py-1">
+      <div className="bg-secondary text-white px-[5%] py-1">
         <div className="flex items-center gap-5">
           <p className="flex items-center gap-1">
             <HiPhone color="#ed502e" /> <span>09612003003</span>
@@ -22,7 +22,7 @@ const Header = () => {
         </div>
       </div>
       <Headroom>
-        <nav className="bg-gray-800 text-white py-2 px-[10%]">
+        <nav className="bg-gray-800 text-white py-2 px-[5%]">
           <div className="flex justify-between items-center">
             <Link href="/">
               <Image
