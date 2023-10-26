@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import CountUp from "react-countup";
 import { FiCheckCircle } from "react-icons/fi";
 import ButtonSecondary from "../ButtonGroup/ButtonSecondary";
 import SectionHeadTitle from "../Shared/SectionHeadTitle";
@@ -8,9 +10,16 @@ const AboutUs = () => {
     <div className="px-[5%] grid grid-cols-12 mt-48 mb-20 gap-24">
       <div className="col-span-7 relative bg-[url('/images/image5.jpg')] bg-cover bg-center w-full h-full">
         <div className="absolute animation-container bg-primary -right-12 top-8 px-4 py-3 rounded-lg text-white flex items-center gap-3">
-          <h1 className="text-4xl">
-            <span className="font-semibold">40</span>+{" "}
-          </h1>
+          <h4 className="text-4xl">
+            <span className="font-semibold">
+              <CountUp
+                end={40}
+                duration={2.5}
+                suffix="+"
+                enableScrollSpy={true}
+              />
+            </span>
+          </h4>
           <p className="text-lg tracking-widest ">
             Years of <br /> Experience
           </p>

@@ -98,7 +98,7 @@ const WorkingProgress = () => {
             }`}
           >
             <Image
-              src="/images/process/booking.jpg"
+              src="/images/process/booking.svg"
               width={150}
               height={150}
               alt="Booking"
@@ -178,11 +178,21 @@ const WorkingProgress = () => {
               delivery ? "ring-8" : ""
             }`}
           >
-            {animationData && (
+            {false ? (
               <Lottie
                 animationData={animationData}
                 loop={true}
                 className={`p-1 rounded-full ring-4  hover:ring-primary transition-all duration-500 w-full h-full overflow-hidden ${
+                  delivery ? "ring-primary" : "ring-secondary"
+                }`}
+              />
+            ) : (
+              <Image
+                src="/images/process/delivery2.svg"
+                width={150}
+                height={150}
+                alt="Transportation"
+                className={`p-1 rounded-full ring-4  hover:ring-primary transition-all duration-500 w-full h-full ${
                   delivery ? "ring-primary" : "ring-secondary"
                 }`}
               />
