@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 import "./FaqItem.css";
 
 const AccordionItem = (props) => {
@@ -14,7 +15,11 @@ const AccordionItem = (props) => {
           onClick={() => handleToggle(id)}
         >
           <h5 className="rc-accordion-title">{header}</h5>
-          <i className="fa fa-chevron-down rc-accordion-icon"></i>
+          {active === id ? (
+            <HiChevronUp size={24} color="#ed502e" />
+          ) : (
+            <HiChevronDown size={24} />
+          )}
         </div>
       </div>
       <div
