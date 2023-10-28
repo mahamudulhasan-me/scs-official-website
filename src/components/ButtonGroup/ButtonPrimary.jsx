@@ -1,18 +1,10 @@
 "use client";
-import ReactiveButton from "reactive-button";
 
-const ButtonPrimary = ({ idleText, size }) => {
+const ButtonPrimary = ({ children }) => {
   return (
-    <ReactiveButton
-      color={"primary"}
-      idleText={idleText}
-      size={size}
-      style={{
-        borderRadius: "5px",
-        padding: "0.7rem",
-        fontWeight: "bold",
-      }}
-    />
+    <button class="bg-gradient-to-r from-secondary to-primary hover:from-primary hover:to-secondary text-white font-bold py-3 px-6 rounded-md shadow-lg transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
+      {children}
+    </button>
   );
 };
 

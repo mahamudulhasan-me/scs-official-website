@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 // import required modules
 import Link from "next/link";
 import { Autoplay, Pagination } from "swiper/modules";
-import ButtonPrimary from "../ButtonGroup/ButtonPrimary";
+import ButtonMore from "../ButtonGroup/ButtonMore";
 import SectionHeadTitle from "../Shared/SectionHeadTitle";
 import ServiceSlider from "../Shared/ServiceSlider";
 
@@ -101,7 +101,7 @@ export default function Services() {
         </SwiperSlide>
       </Swiper>
       <Link href={""} className="flex justify-center items-center mt-4">
-        <ButtonPrimary idleText={"View More Service"} size={"large"} />
+        <ButtonMore>View More Service</ButtonMore>
       </Link>
     </div>
   );

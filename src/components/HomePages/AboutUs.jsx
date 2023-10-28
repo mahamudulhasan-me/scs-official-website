@@ -1,13 +1,21 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import CountUp from "react-countup";
-import { FiCheckCircle } from "react-icons/fi";
-import ButtonSecondary from "../ButtonGroup/ButtonSecondary";
+import { BsHeadset } from "react-icons/bs";
+import {
+  FiCheckCircle,
+  FiFacebook,
+  FiInstagram,
+  FiLinkedin,
+  FiTwitter,
+} from "react-icons/fi";
+import ButtonMore from "../ButtonGroup/ButtonMore";
 import SectionHeadTitle from "../Shared/SectionHeadTitle";
 
 const AboutUs = () => {
   return (
-    <div className="px-[5%] grid grid-cols-12 mt-48 mb-20 gap-24">
+    <div className="px-[5%] grid grid-cols-12 mt-48 mb-20 gap-20">
       <div className="col-span-7 relative bg-[url('/images/image5.jpg')] bg-cover bg-center w-full h-full">
         <div className="absolute animation-container bg-primary -right-12 top-8 px-4 py-3 rounded-lg text-white flex items-center gap-3">
           <h4 className="text-4xl">
@@ -43,7 +51,7 @@ const AboutUs = () => {
           their price tags are, and what means quite a bit to them and their
           clients. We interface with our clients.
         </p>
-        <div className="text-lg  text-gray-700  space-y-2 border-b my-4 pb-8">
+        <div className="text-lg  text-gray-700  space-y-2 border-b mt-4 pb-8">
           <p className="flex items-center gap-2">
             <FiCheckCircle color="#ed502e" size={20} /> Creative Work Insight
           </p>
@@ -56,14 +64,40 @@ const AboutUs = () => {
             Company
           </p>
         </div>
-        <div className="flex items-center gap-10">
-          <ButtonSecondary idleText={"Read More"} size={"large"} />
-          <p>
-            <span>Call us for help</span> <br />
-            <span className="text-xl text-slate-900 font-semibold">
-              09612003003
-            </span>
-          </p>
+        <div className="flex items-center gap-2">
+          <div className="w-1/2">
+            <ButtonMore>Read More</ButtonMore>
+          </div>
+          <div class="flex items-center p-3 w-72 h-28 bg-white rounded-md shadow-lg">
+            <section class="flex justify-center items-center w-14 h-14 rounded-full shadow-md bg-gradient-to-r from-[#F9C97C] to-[#A2E9C1] hover:from-[#C9A9E9] hover:to-[#7EE7FC] hover:cursor-pointer hover:scale-110 duration-300">
+              <BsHeadset size={24} />
+            </section>
+
+            <section class="block border-l border-gray-300 m-3">
+              <div class="pl-3">
+                <h3 class="text-gray-600 font-semibold text-sm">
+                  For More Details
+                </h3>
+                <h3 class="bg-clip-text text-transparent bg-gradient-to-l from-[#005BC4] to-[#27272A] text-lg font-bold">
+                  09612003003
+                </h3>
+              </div>
+              <div class="flex gap-3 pt-2 pl-3 text-xl text-gray-600">
+                <Link href={"/"}>
+                  <FiFacebook className="hover:scale-125 duration-200 hover:cursor-pointer " />
+                </Link>
+                <Link href={"/"}>
+                  <FiLinkedin className="hover:scale-125 duration-200 hover:cursor-pointer " />
+                </Link>
+                <Link href={"/"}>
+                  <FiTwitter className="hover:scale-125 duration-200 hover:cursor-pointer " />
+                </Link>
+                <Link href={"/"}>
+                  <FiInstagram className="hover:scale-125 duration-200 hover:cursor-pointer " />
+                </Link>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </div>

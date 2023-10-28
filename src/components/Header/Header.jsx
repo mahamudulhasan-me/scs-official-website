@@ -43,10 +43,10 @@ const Header = () => {
 
               <div className="space-x-4">
                 <Link href="/">
-                  <ButtonOutline idleText={"Login"} size={"normal"} />
+                  <ButtonOutline>Login</ButtonOutline>
                 </Link>
                 <Link href="/">
-                  <ButtonPrimary idleText={"Tracking"} size={"normal"} />
+                  <ButtonPrimary>Tracking</ButtonPrimary>
                 </Link>
               </div>
             </div>
